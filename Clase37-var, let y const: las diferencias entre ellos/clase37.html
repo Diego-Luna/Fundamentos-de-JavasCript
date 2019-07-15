@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Clase 37</title>
+</head>
+<body>
+
+  <script>
+// al poner variables con 'var' siempre las rescribe
+// tambien se puede porner 'var mensaje, mensaje2'
+
+// Al poner 'let', solo se puede usar en el bloque que se declaro, en tre las llaves
+// if (persona.edad >= 18){
+//   let mensaje = 'Es mayor de edad'
+// }
+//  o poner la desde el blo que de ariva
+// function esMayorDeEdad(persona){
+// let  mensaje
+// if (persona.edad >= 18){
+//      mensaje = 'Es mayor de edad'
+//   }else{
+//      mensaje = 'No eres mayor de edad'
+//   }
+//   console.log(mensaje);
+// }
+
+// 'const' funciona momo el let, con la diferencia que es una constante no se le puede cambiar el valor lla acicnado
+
+// para agregar un nuevo valor al array es con '.push(valor)'
+    var diego = {
+      nombre : 'Diego',
+      apellido : 'Queso',
+      edad : 17
+    }
+
+    function esMayorDeEdad(persona){
+      if (persona.edad >= 18){
+        var mensaje = 'Es mayor de edad'
+      }else{
+        var mensaje = 'No eres mayor de edad'
+      }
+      console.log(mensaje);
+    }
+
+    esMayorDeEdad(diego)
+
+    for (var i =0; i< 10; i++){
+      console.log(i);
+    }
+
+  </script>
+
+</body>
+</html>

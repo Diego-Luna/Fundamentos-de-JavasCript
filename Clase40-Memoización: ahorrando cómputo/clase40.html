@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Clase 40</title>
+</head>
+<body>
+
+  <script>
+      /*  Factorial
+      16 =6*5*4*3*2*1
+      */
+
+    function factorial(n){
+//  las funciones tambien tienes atributos, y si no tiene el cache se crea el objeto
+      if (!this.cache){
+        this.cache = {}
+      }
+
+      if (this.cache[n]){
+        return this.cache[n]
+      }
+
+      if(n ==1){
+        return 1
+      }
+
+// Se guarda en el cache
+       this.cache[n] = n * factorial(n-1)
+       return this.cache[n]
+
+      // return n * factorial(n-1)
+      //  6* factorial 5 * factorial 4 *factorial 3* factorial 2* factorial 1
+    }
+
+  </script>
+
+</body>
+</html>

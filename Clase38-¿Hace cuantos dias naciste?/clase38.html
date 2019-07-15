@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Clase 38</title>
+</head>
+<body>
+
+  <script>
+    function diasEntreFechas(fecha1,fecha2){
+    const unDia = 1000*60*60*24
+
+// 'Math.abs()' me da el valor en positivos
+      const diferencia = Math.abs(fecha1 - fecha2)
+
+// 'Math.floor()' para redondear para abajo
+      return Math.floor(diferencia / unDia)
+    }
+
+  const hoy = new Date()
+  const nacimiento = new Date(1990, 7, 12)
+
+
+
+  </script>
+
+</body>
+</html>

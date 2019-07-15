@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Clase 42</title>
+</head>
+<body>
+
+  <script>
+  const diego = {
+    nombre: 'Diego',
+    apellido: 'Queso',
+    edad: 2
+  }
+
+  // const cumpleanos = persona => persona.edad++
+
+ //  lo que creamos un nuevo objeto con los datos del anterior, agregando mas edad
+  const cumpleanosInmutable = persona => ({
+    ...persona,
+    edad: persona.edad + 1
+  })
+
+
+  </script>
+
+</body>
+</html>
